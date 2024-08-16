@@ -56,7 +56,7 @@ function App() {
           good={rate.good}
           neutral={rate.neutral}
           bad={rate.bad}
-          total={totalFeedback}
+          totalFeedbacks={totalFeedback}
           positiveFeedback={positiveFeedback}
         />
       ) : (
