@@ -8,7 +8,7 @@ import Notification from './components/Notification/Notification';
 
 function App() {
   const [rate, setRate] = useState(() => {
-    const savedRate = window.localStorage.getItem("saveRate");
+    const savedRate = window.localStorage.getItem("savedRate");
 
     if (savedRate) {
       return JSON.parse(savedRate);
@@ -41,9 +41,7 @@ function App() {
   };
 
   const totalFeedback = rate.good + rate.neutral + rate.bad;
-  const positiveFeedback = Math.round(
-    ((rate.good + rate.neutral) / totalFeedback) * 100
-  );
+  const positiveFeedback = Math.round((rate.good / totalFeedback) * 100)
 
   return (
     <>
