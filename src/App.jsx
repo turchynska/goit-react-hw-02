@@ -49,7 +49,7 @@ function App() {
       <Options
         updateFeedback={updateFeedback}
         onReset={onReset}
-        total={totalFeedback}
+        totalFeedbacks={totalFeedback}
       />
       {totalFeedback > 0 ? (
         <Feedback
